@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from 'react-router-dom'
 class SignUp extends Component {
   state = {
     nameError: "",
@@ -52,10 +52,7 @@ class SignUp extends Component {
   };
   render() {
     return (
-      <div className="container">
-        <ol className="breadcrumb">
-          <li className="active">S'inscrire</li>
-        </ol>
+      <div id="S_up" className="container">
         <article className="col-xs-12 maincontent">
           <header className="page-header">
             <h1 className="page-title">S'inscrire</h1>
@@ -64,17 +61,18 @@ class SignUp extends Component {
             <div className="panel panel-default">
               <div className="panel-body">
                 <h3 className="thin text-center">
-                  Inscrivez-vous sur San3a.tn
+                  Inscrivez-vous sur <span style={{ fontWeight: 'bold' }}>SANعA.tn</span>
                 </h3>
                 <p className="text-center text-muted">
-                  Si vous etes deja membre, <a href="signin.html">connectez</a>{" "}
-                  vous et lancer votre recherche de bricoleur ou du travail sur
-                  notre platforme.{" "}
+                Si vous êtes déjà membre,<Link to="/connexion" data-scroll >
+                      <span style={{ fontWeight: 'bold' }}> connectez-vous </span>
+                    </Link> et lancez votre recherche de bricoleur ou du travail sur
+                  notre platforme.
                 </p>
                 <hr />
                 <form>
                   <div className="top-margin">
-                    <label>Prenom</label>
+                    <label>Prénom</label>
                     <input
                       type="text"
                       className="form-control"
@@ -96,7 +94,7 @@ class SignUp extends Component {
                   </div>
                   <div className="top-margin">
                     <label>
-                      telephone <span className="text-danger">*</span>
+                      Téléphone <span className="text-danger">*</span>
                     </label>
                     <input
                       type="text"
@@ -108,7 +106,7 @@ class SignUp extends Component {
                   </div>
                   <div className="top-margin">
                     <label>
-                      Addresse mail <span className="text-danger">*</span>
+                      Adresse-Email <span className="text-danger">*</span>
                     </label>
                     <input
                       type="text"
@@ -133,7 +131,7 @@ class SignUp extends Component {
                     </div>
                     <div className="col-sm-6">
                       <label>
-                        Confirmer Mot de passe{" "}
+                        Confirmer le mot de passe{" "}
                         <span className="text-danger">*</span>
                       </label>
                       <input

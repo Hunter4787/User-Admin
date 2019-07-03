@@ -1,82 +1,86 @@
 import React, { Component } from 'react';
 class AboutUs extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return (<div>
-            <div id="about" className="section wb">
-  <div className="container">
-    <div className="row">
-      <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-        <div className="message-box">
-          <h2>About Us</h2>
-          <h5>WE ARE THE LEADERS IN THE CONSTRUCTION INDUSTRY!</h5>
-        </div>
-        {/* end messagebox */}
-      </div>
-      {/* end col */}
-      <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-        <div className="message-box">
-          <p className="lead">Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vitae rutrum neque. Ut id erat sit amet libero bibendum aliquam. Donec ac egestas libero, eu bibendum risus. Phasellus et congue justo. </p>
-          <a href="#" className="read-more">Read More</a>
-        </div>
-        {/* end messagebox */}
-      </div>
-      {/* end col */}
-    </div>
-    {/* end row */}
-    <div className="row text-center about-row">
-      <div className="col-md-4 col-sm-12 col-xs-12">
-        <div className="row">
-          <div className="service-widget">
-            <div className="post-media wow fadeIn">
-              <a href="uploads/building_01.jpg" data-rel="prettyPhoto[gal]" className="hoverbutton global-radius"><i className="flaticon-unlink" /></a>
-              <img src="uploads/building_01.jpg" alt className="img-responsive img-rounded" />
+  constructor(props) {
+    super(props);
+    this.state = {}
+  }
+  render() {
+    return (<div>
+      <div id="about" className="section wb">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+              <div className="message-box">
+                <h2>À Propos</h2>
+                <h5><span style={{ fontWeight: 'bold' }}>SANعA</span>, est le plateforme n°1 en Tunisie des métiers manuels entre particuliers.</h5>
+              </div>
+              {/* end messagebox */}
             </div>
-            <h3>Spacious and Large Garden</h3>
-            <p>Aliquam sagittis ligula et sem lacinia, ut facilisis enim sollicitudin. Proin nisi est, convallis nec purus vitae, iaculis posuere sapien. Cum sociis natoque.</p>
-          </div>
-          {/* end service */}
-        </div>
-      </div>
-      <div className="col-md-4 col-sm-12 col-xs-12">
-        <div className="row">
-          <div className="service-widget">
-            <div className="post-media wow fadeIn">
-              <a href="uploads/building_02.jpg" data-rel="prettyPhoto[gal]" className="hoverbutton global-radius"><i className="flaticon-unlink" /></a>
-              <img src="uploads/building_02.jpg" alt className="img-responsive img-rounded" />
+            {/* end col */}
+            <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+              <div className="message-box">
+                <p className="lead">Vous êtes à la recherche d’offres d’emploi pour compléter vos revenus ?
+                <br/>Vous avez besoin d’aide pour de petits travaux de bricolage ? Inscrivez-vous sur <span style={{ fontWeight: 'bold' }}>SANعA</span>,
+                 le plateforme collaborative pionnière du métiers manuels en Tunisie! 
+                 <br/>Sur notre site, vous pouvez publier une annonce de particulier et consulter les cv de nos bricoleurs depuis leurs profils pour vous assurer des prestations de qualité, en toute confiance.
+                 <br/>Alors, prenez contact avec l’un d’entre eux pour vous faciliter la vie ! </p>
+                <a className="read-more" style={{ color: 'white' }}>Prenez ideés sur quelques métiers manuels</a>
+              </div>
+              {/* end messagebox */}
             </div>
-            <h3>With its Own Pool</h3>
-            <p>Duis at tellus at dui tincidunt scelerisque nec sed felis. Suspendisse id dolor sed leo rutrum euismod. Nullam vestibulum fermentum erat. It nam auctor. </p>
+            {/* end col */}
           </div>
-          {/* end service */}
-        </div>
-      </div>
-      <div className="col-md-4 col-sm-12 col-xs-12">
-        <div className="row">
-          <div className="service-widget">
-            <div className="post-media wow fadeIn">
-              <a href="uploads/building_03.jpg" data-rel="prettyPhoto[gal]" className="hoverbutton global-radius"><i className="flaticon-unlink" /></a>
-              <img src="uploads/building_03.jpg" alt className="img-responsive img-rounded" />
+          {/* end row */}
+          <div className="row text-center about-row">
+            <div className="col-md-4 col-sm-12 col-xs-12">
+              <div className="row">
+                <div className="service-widget">
+                  <div className="post-media wow fadeIn">
+                    <a href="uploads/plombier.jpg" data-rel="prettyPhoto[gal]" className="hoverbutton global-radius"><i className="flaticon-unlink" /></a>
+                    <img src="uploads/plombier.jpg" alt className="img-responsive img-rounded" />
+                  </div>
+                  <h3>Plombier</h3>
+                  <p>Le plombier est un spécialiste de l’installation sanitaire et/ou thermique. Il exerce aussi bien lors de constructions que lors de réhabilitations en réglant les problèmes que l’on rencontre tous les jours.</p>
+                </div>
+                {/* end service */}
+              </div>
             </div>
-            <h3>In Forests- Fresh Clean Air</h3>
-            <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+            <div className="col-md-4 col-sm-12 col-xs-12">
+              <div className="row">
+                <div className="service-widget">
+                  <div className="post-media wow fadeIn">
+                    <a href="uploads/electricien.jpg" data-rel="prettyPhoto[gal]" className="hoverbutton global-radius"><i className="flaticon-unlink" /></a>
+                    <img src="uploads/electricien.jpg" alt className="img-responsive img-rounded" />
+                  </div>
+                  <h3>Electricien</h3>
+                  <p>L’électricien est le spécialiste des installations électriques. Il exerce l’installation des prises électriques,les tableaux avec fusibles,les disjoncteurs dans les armoires et bien plus encore. </p>
+                </div>
+                {/* end service */}
+              </div>
+            </div>
+            <div className="col-md-4 col-sm-12 col-xs-12">
+              <div className="row">
+                <div className="service-widget">
+                  <div className="post-media wow fadeIn">
+                    <a href="uploads/macon.jpg" data-rel="prettyPhoto[gal]" className="hoverbutton global-radius"><i className="flaticon-unlink" /></a>
+                    <img src="uploads/macon.jpg" alt className="img-responsive img-rounded" />
+                  </div>
+                  <h3>Maçon</h3>
+                  <p>Premier sur le chantier, le maçon s’occupe de la construction initiale des bâtiments, maisons, immeubles, etc. Pour cela, il est en charge des fondations, des murs et bien plus encore.</p>
+                </div>
+                {/* end service */}
+              </div>
+            </div>
           </div>
-          {/* end service */}
+          {/* end row */}
         </div>
+        {/* end container */}
+        <div className="sep1" />
       </div>
-    </div>
-    {/* end row */}
-  </div>
-  {/* end container */}
-  <div className="sep1" />
-</div>
-{/* end section */}
+      {/* end section */}
 
-        </div>  );
-    }
+    </div>);
+  }
 }
- 
-export default AboutUs ;
+
+export default AboutUs;

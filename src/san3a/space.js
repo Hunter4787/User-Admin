@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-
-class AdminBody extends Component {
+class Space extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
     }
     render() { 
-        return ( <div></div> );
+        return ( <div className="space">
+
+        </div> );
     }
 }
  
-export default AdminBody;
+export default Space;

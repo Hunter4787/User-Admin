@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
+
 class Contactus extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
     }
     render() { 
-        return ( <div>
+        return ( <div id="cont_us">
            <div id="contact" className="section wb">
   <div className="container">
     <div className="section-title row text-center">
       <div className="col-md-8 col-md-offset-2">
-        <h3>Contact Us</h3>
-        <p className="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
+        <h3>Contact</h3>
+        <p className="lead">Contactez-nous, si vous avez des questions ou des réclamations.</p>
       </div>
       {/* end col */}
     </div>
@@ -25,8 +26,8 @@ class Contactus extends Component {
                 <div className="icon"><i className="fa fa-home" /></div>
               </div>
               <div className="info-content">
-                <h6 className="uppercase"> Address:</h6>
-                <p> 1010 Berkler avenue, Brooklyn New York City, NY 10018 US</p>
+                <h6 className="uppercase"> Adresse:</h6>
+                <p> 15 Rue la republique Tunis,Tunisie.</p>
               </div>
             </li>
             <li>
@@ -34,8 +35,8 @@ class Contactus extends Component {
                 <div className="icon"><i className="fa fa-volume-control-phone" /></div>
               </div>
               <div className="info-content">
-                <h6 className="uppercase"> Phone No:</h6>
-                <p> +212 386 5575<br />+212 386 5575</p>
+                <h6 className="uppercase"> Téléphone:</h6>
+                <p> +216 00 000 000<br /></p>
               </div>
             </li>
             <li>
@@ -43,8 +44,8 @@ class Contactus extends Component {
                 <div className="icon"><i className="fa fa-envelope-o" /></div>
               </div>
               <div className="info-content">
-                <h6 className="uppercase"> Email Address:</h6>
-                <p>Demo@gmail.com</p>
+                <h6 className="uppercase">  Adresse-Email:</h6>
+                <p>SANعA@gmail.com</p>
               </div>
             </li>
           </ul>
@@ -56,31 +57,28 @@ class Contactus extends Component {
           <form id="contactform" className="row" action="contact.php" name="contactform" method="post">
             <fieldset className="row-fluid">
               <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <input type="text" name="first_name" id="first_name" className="form-control" placeholder="First Name" />
+                <input type="text" name="first_name" id="first_name" className="form-control" placeholder="Prénom" />
               </div>
               <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <input type="text" name="last_name" id="last_name" className="form-control" placeholder="Last Name" />
+                <input type="text" name="last_name" id="last_name" className="form-control" placeholder="Nom" />
               </div>
               <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <input type="email" name="email" id="email" className="form-control" placeholder="Your Email" />
-              </div>
-              <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <input type="text" name="phone" id="phone" className="form-control" placeholder="Your Website" />
+                <input type="email" name="email" id="email" className="form-control" placeholder="Votre E-mail" />
               </div>
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <label className="sr-only">Select Department</label>
-                <select name="select_service" id="select_service" className="selectpicker form-control" data-style="btn-white">
-                  <option value={12}>Select Service</option>
-                  <option value="Building Service">Building Service</option>
-                  <option value="Tover Design">Tover Design</option>
-                  <option value="Others">Others</option>
+                <select name="select_service" id="select_service" className="selectpicker form-control" data-style="btn-white" >
+                <option value={12}>Sélectionnez le sujet correspondant à votre message</option>
+                  <option value="Une réclamation">Une réclamation</option>
+                  <option value="Un problème technique">Un problème technique</option>
+                  <option value="L’utilisation du site">L’utilisation du site</option>
+                  <option value="Autre">Autre</option>
                 </select>
               </div>
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <textarea className="form-control" name="comments" id="comments" rows={6} placeholder="Give us more details.." defaultValue={""} />
+                <textarea className="form-control" name="comments" id="comments" rows={6} placeholder="Saississez votre message.." defaultValue={""} />
               </div>
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                <button type="submit" value="SEND" id="submit" className="btn btn-light btn-radius btn-brd grd1 btn-block">Get a Quote</button>
+                <button type="submit" value="SEND" id="submit" className="btn btn-light btn-radius btn-brd grd1 btn-block">Envoyez</button>
               </div>
             </fieldset>
           </form>

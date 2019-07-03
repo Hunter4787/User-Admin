@@ -6,20 +6,18 @@ import Services from './services'
 import Projects from './projects'
 import Contactus from './contactus'
 import Footer from './footer'
-import Searchbar from './searchbar'
 import './App.css';
 
 function Home() {
   return (
     <div className="App">
-      <Header />
+      <Header/>
       <InHeader/>
       <AboutUs/>
       <Services/>
       <Projects/>
       <Contactus/>
       <Footer/>
-      <Searchbar/>
       
     </div>
   );

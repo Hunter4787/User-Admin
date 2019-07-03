@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 class SignIn extends Component {
   constructor(props) {
@@ -8,10 +8,7 @@ class SignIn extends Component {
   }
   render() {
     return (
-      <div className="container">
-        <ol className="breadcrumb">
-          <li className="active">Accée utilisateur</li>
-        </ol>
+      <div id="S_in" className="container">
         <div className="row">
           <article className="col-xs-12 maincontent">
             <header className="page-header">
@@ -21,18 +18,20 @@ class SignIn extends Component {
               <div className="panel panel-default">
                 <div className="panel-body">
                   <h3 className="thin text-center">
-                    Se connecter a mon compte
+                    Se connecter à mon compte
                   </h3>
                   <p className="text-center text-muted">
-                    Si vous n'avez pas encore du compte,{" "}
-                    <a href="signup.html">Inscrier</a> vous sur notre platforme
-                    et accedez a tous nous services, ou proposer vos services{" "}
+                    Si vous n'avez pas encore du compte,
+                    <Link to="/inscription" data-scroll >
+                      <span style={{ fontWeight: 'bold' }}> inscrivez-vous </span>
+                    </Link>
+                    sur notre platforme et accedez à tous nos services.
                   </p>
                   <hr />
                   <form>
                     <div className="top-margin">
                       <label>
-                        Pseudo/Email <span className="text-danger">*</span>
+                        Pseudo/Adresse-Email <span className="text-danger">*</span>
                       </label>
                       <input type="text" className="form-control" />
                     </div>
@@ -50,7 +49,7 @@ class SignIn extends Component {
                         </b>
                       </div>
                       <div className="col-lg-4 text-right">
-                       <Link to='/user'> <button className="btn btn-action" type="submit"> 
+                        <Link to='/user'> <button className="btn btn-action" type="submit">
                           Se connecter
                         </button>
                         </Link>

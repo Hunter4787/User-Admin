@@ -75,7 +75,7 @@
     max-width:525px;
     min-height:670px;
     position:relative;
-    
+    /* background: url(../images/) no-repeat center; */
     box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
   }
   .login-html{
@@ -241,6 +241,20 @@
   display: flex
 }
 
+/*--------------------home style--------------------------*/
+/* #about,#cont,#cont_us{
+  margin-top: 100px;
+} */
+.space{
+  margin-top: 100px;
+}
+#S_up,#S_in{
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+#logo
+{border-radius:20px;}
+
 .dashboard-home span.title__box {
   font-size: 16px;
   font-weight: 600;
@@ -255,3 +269,38 @@
   padding: 30px;
   margin-bottom: 50px;
 }
+/*----searchbar style -----*/
+.S_bar{
+
+  margin-top:50px;
+  margin-bottom:50px;
+  margin-left:120px;
+  display: flex;
+  align-items:center;
+  /* justify-content:  */
+  
+}
+.categorie_button,.emplacement_button{
+  display: flex;
+ flex-direction: column
+}
+.search_button{
+ 
+  border:forestgreen;
+  background-color: green;
+  margin-top: 25px;
+  color: white;
+  width:80px;
+  height: 50px;
+}
+.lab{
+  font-size:20px;
+  color: white;
+}
+.high_title{
+  font-size:40px;
+  color: white;
+  text-align: center;
+}
+
+

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 class Footer extends Component {
     constructor(props) {
         super(props);
@@ -12,52 +13,48 @@ class Footer extends Component {
                     <div className="row">
                         <div className="col-md-4">
                             <div className="widget widget_text">
-                                <h2 className="widget-title"><span>ABOUT US</span></h2>
+                                <h2 className="widget-title"><span>À propos</span></h2>
                                 <div className="textwidget">
-                                    <a className="navbar-brand" href="index-building.html"><img src="images/logo-icon.png" alt="image" /><span>Constructed</span></a>
-                                    <p>Aenean suscipit eget mi act fermentum phasellus vulputate turpis tincidunt. Aenean suscipit eget. Aenean suscipit eget mi act fermentum phasellus vulputate turpis tincidunt. Aenean suscipit ege  Aenean suscipit eget mi act fermentum phasellus.</p>
+                                    <Link to="/" data-scroll ><img src="images/logo.png"style={{ width: '10%' }} alt="image" /><span style={{ fontWeight: 'bold',fontSize:'20px' }}> SANعA </span></Link>
+                                    <p><span style={{ fontWeight: 'bold', }}> SANعA </span>,est le plateforme n°1 en Tunisie des métiers manuels entre particuliers.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="widget widget_links">
-                                <h2 className="widget-title"><span>COMPANY LINKS</span></h2>
+                                <h2 className="widget-title"><span>Sanعa</span></h2>
                                 <ul className="wprt-links clearfix col2">
-                                    <li><a data-scroll href="#home">Home</a></li>
-                                    <li><a data-scroll href="#about">About Us</a></li>
-                                    <li><a data-scroll href="#services">Services</a></li>
-                                    <li><a data-scroll href="#projects">Our Work</a></li>
-                                    <li><a data-scroll href="#testimonials">Testimonials</a></li>
-                                    <li><a data-scroll href="#price">Price</a></li>
-                                    <li><a data-scroll href="#contact">Contact Us</a></li>
+                                    <li><Link to="/" data-scroll >Acceuil</Link></li>
+                                    <li><Link to="/a-propos" data-scroll >À propos</Link></li>
+                                    <li><Link to="/inscription" data-scroll >Inscription</Link></li>
+                                    <li><Link to="/connexion" data-scroll >Se connecter</Link></li>
+                                    <li><Link to="/contact" data-scroll >Contact</Link></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="widget widget_information">
-                                <h2 className="widget-title"><span>CONTACT INFO</span></h2>
+                                <h2 className="widget-title"><span>Rejoignez-nous sur</span></h2>
                                 <ul>
                                     <li className="address clearfix">
-                                        <span className="hl">Address:</span>
-                                        <span className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                                    <span style={{ fontWeight: 'bold' }} >Adresse:<span style={{ marginLeft: '5px', fontWeight: 'normal' }}>15 Rue la republique Tunis,Tunisie.</span></span>
                                     </li>
                                     <li className="phone clearfix">
-                                        <span className="hl">Phone:</span>
-                                        <span className="text">+56 (0) 012 345 6789</span>
+                                            <span style={{ fontWeight: 'bold' }} >Téléphone:<span style={{ marginLeft: '5px', fontWeight: 'normal' }}>+216 00 000 000</span></span>
                                     </li>
                                     <li className="email clearfix">
                                         <span className="hl">E-mail:</span>
-                                        <span className="text">business@support.com</span>
+                                        <span className="text">SANعA@gmail.com</span>
                                     </li>
                                 </ul>
                             </div>
                             <div className="widget widget_socials">
                                 <div className="socials">
-                                    <a target="_blank" href="#"><i className="fa fa-twitter" /></a>
-                                    <a target="_blank" href="#"><i className="fa fa-facebook" /></a>
-                                    <a target="_blank" href="#"><i className="fa fa-google-plus" /></a>
-                                    <a target="_blank" href="#"><i className="fa fa-pinterest" /></a>
-                                    <a target="_blank" href="#"><i className="fa fa-dribbble" /></a>
+                                    <a target="_blank" href="#"><i className="fa fa-facebook" aria-hidden="true" /></a>
+                                    <a target="_blank" href="#"><i className="fa fa-twitter" aria-hidden="true" /></a>
+                                    <a target="_blank" href="#"><i className="fa fa-instagram" aria-hidden="true" /></a>
+                                    <a target="_blank" href="#"><i className="fa fa-youtube" aria-hidden="true" /></a>
+
                                 </div>
                             </div>
                         </div>
@@ -68,18 +65,9 @@ class Footer extends Component {
                         <div id="bottom-bar-inner" className="wprt-container">
                             <div className="bottom-bar-inner-wrap">
                                 <div className="bottom-bar-content">
-                                    <div id="copyright">All Rights Reserved. Company Name © 2018</div>
+                                    <div id="copyright">SANعA © 2019. Tous droits réservés.</div>
                                     {/* /#copyright */}
                                 </div>
-                                {/* /.bottom-bar-content */}
-                                <div className="bottom-bar-menu pull-right">
-                                    <ul className="bottom-nav">
-                                        <li><a href="#/">HISTORY</a></li>
-                                        <li><a href="#/">FAQ</a></li>
-                                        <li><a href="#/">EVENTS</a></li>
-                                    </ul>
-                                </div>
-                                {/* /.bottom-bar-menu */}
                             </div>
                         </div>
                     </div>

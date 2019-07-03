@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom'
 
 class Header extends Component {
     constructor(props) {
@@ -16,16 +17,14 @@ class Header extends Component {
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-hidden">
                                     <div className="col-lg-6 col-md-6 col-sm-6 col-xs-hidden">
                                         <div className="gem-contacts-item gem-contacts-phone">
-                                            <a className="phone-icon" href="#" target="_blank" title="phone"><i className="fa fa-phone" aria-hidden="true" />+1 999-888-77-66</a>
+                                            <a className="phone-icon" href="#" target="_blank" title="phone"><i className="fa fa-phone" aria-hidden="true" />+216 00-000-000</a>
                                         </div>
                                     </div>
                                     <div className="top-area-block top-area-socials socials-colored-hover">
                                         <div className="socials inline-inside">
                                             <a className="socials-item" href="#" target="_blank" title="facebook"><i className="fa fa-facebook" aria-hidden="true" /></a>
-                                            <a className="socials-item" href="#" target="_blank" title="linkedin"><i className="fa fa-linkedin" aria-hidden="true" /></a>
                                             <a className="socials-item" href="#" target="_blank" title="twitter"><i className="fa fa-twitter" aria-hidden="true" /></a>
                                             <a className="socials-item" href="#" target="_blank" title="instagram"><i className="fa fa-instagram" aria-hidden="true" /></a>
-                                            <a className="socials-item" href="#" target="_blank" title="pinterest"><i className="fa fa-pinterest" aria-hidden="true" /></a>
                                             <a className="socials-item" href="#" target="_blank" title="youtube"><i className="fa fa-youtube" aria-hidden="true" /></a>
                                         </div>
                                     </div>
@@ -41,15 +40,15 @@ class Header extends Component {
                                 <span className="icon-bar" />
                                 <span className="icon-bar" />
                             </button>
-                            <a className="navbar-brand" href="index.html"><img src="images/logo-icon.png" alt="image" /><span>Sanaa</span></a>
+                            <a className="navbar-brand" href="index.html"><img id="logo" src="images/logo.png" alt="image" /><span>Sanعa</span></a>
                         </div>
                         <div id="navbar" className="navbar-collapse collapse">
                             <ul className="nav navbar-nav navbar-right">
-                                <li className="active"><a data-scroll href="#home">Home</a></li>
-                                <li><a data-scroll href="#about">About Us <span className="hidden-xs">*</span></a></li>
-                                <li><a data-scroll href="#services">Services</a></li>
-                                <li><a data-scroll href="#projects">Our Work</a></li>
-                                <li><a data-scroll href="#contact">Contact Us</a></li>
+                                <li><Link to="/" data-scroll >Acceuil</Link></li>
+                                <li><Link to="/a-propos" data-scroll >À propos</Link></li>
+                                <li><Link to="/inscription" data-scroll >Inscription</Link></li>
+                                <li><Link to="/connexion" data-scroll >Se connecter</Link></li>  
+                                <li><Link to="/contact" data-scroll >Contact</Link></li>
                             </ul>
                         </div>
                     </div>
